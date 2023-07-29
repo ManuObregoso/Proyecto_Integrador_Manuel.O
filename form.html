@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="form.scss">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="Index.html">
+</head>
+<body>
+    <!-- HEADER -->
+     <header class="encab">
+        
+        <div class="info-school">
+            <h1 class="tit-nav">School Untref</h1>
+            <img class="img-nav" src="./Elementos/Fotos/logo.png" alt="">
+        </div>
+
+        <nav class="navegador">
+            <a href="./Index.html">Home</a>
+            <a class="ini-a" href="./Index.html#QS">Quienes Somos</a>
+            <a class="pq-a" href="./Index.html#sect2">¿Por qué Elegirnos?</a>
+            <a class="pr-a" href="./Index.html#sect3">Propuestas</a>
+            <a class="not-a" href="./Index.html#sect4-news">Noticias</a>
+            
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- FORMULARIO -->
+    <section class="formulario">
+        
+        <div class="container">
+            <div class="info-form">
+                <h1>SCHOOL UNTREF</h1>
+                <h2>INSCRIPCIONES CICLO LECTIVO 2024 ABIERTAS</h2>
+                <h3>Llena el Formulario Para Obtener Una reunion</h3>
+                <p class="p-info">Cupos Limitados</p>
+            </div>
+            
+            <form class="form" action="https://formsubmit.co/manuelobregoso@gmail.com" method="POST">
+                
+                <div class="form__div">
+                    <div class="div_input">
+                        <h4 class="form-h4">¡Completa el formulario!</h4>
+                        <p class="form-p">Datos del responsable:</p>
+                    </div>
+                    <div class="div_input">
+                        <label for="nombre"></label>
+                        <input type="text" name="nombre" placeholder="nombre:" required>
+                    </div>
+                    <div class="div_input">
+                        <label for="apellido"></label>
+                        <input type="text" name="apellido" placeholder="apellido:" required>
+                    </div>
+                    <div class="div_input">
+                        <label for="dni"></label>
+                        <input type="tel" name="dni" placeholder="dni:" required>
+                    </div>   
+                    <div class="div_input">
+                        <label for="tel"></label>
+                        <input type="text" name="tel" placeholder="telefono:" required>
+                    </div>
+                    <div class="div_input">
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="e-mail:" required>
+                    </div>
+        
+        
+                </div>
+                <div class="form__div-alum">
+                    <div class="div_input-alum">
+                        <p class="form-p ">Datos del Aspirante:</p>
+                    </div>
+                    <div class="div_input-alum">
+                        <label for="name"></label>
+                        <input type="text" name="name" placeholder="nombre:" required>
+                    </div>
+                    <div class="div_input-alum fecnac">
+                        <label for="fecha"></label>
+                        <input type="date" name="fecha" placeholder="fecha de nacimiento" required>
+                    </div>
+                    <div class="div_input-alum">
+                        <label for="año"></label>
+                        <input type="text" name="año" placeholder="Año de Grado al que aspira (1ro, 2do, 3ro, 4to):" maxlength="6" minlength="1" required>
+                    </div>
+                    <div class="div_input-alum">
+                        <input class="input-boton" type="submit" value="enviar">
+                        
+                    </div>
+        
+        
+        
+        
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <!-- Redes Sociales -->
+        <div class="foot_div-img">
+            <h4 class="foot-h4 red">Redes Sociales:</h4>
+            <div class="foot_div-red">
+                <a href="https://www.facebook.com/" target="_blank"><img class="foot-img" src="./Elementos/Fotos/iconos/facebook.png" alt="logo de facebook" width="20%"></a>
+            </div>
+            <div class="foot_div-red">
+                <a href="https://www.instagram.com/" target="_blank"><img class="foot-img" src="./Elementos/Fotos/iconos/instagram.png" alt="logo de instagram" width="20%"></a>
+            </div>
+            <div class="foot_div-red">
+                <a href="https://twitter.com/" target="_blank"><img class="foot-img" src="./Elementos/Fotos/iconos/gorjeo.png" alt="logo de twitter" width="20%"></a>
+            </div>  
+        </div>
+        <!-- MAPS -->
+        <div class="foot_div-ubic">
+            <h4 class="foot-h4 h4-maps">School Untref</h4>
+            <div class="foot-ubic"><iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22090.407665800874!2d-58.585116837650055!3d-34.61026159042124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8225324cab5%3A0x4aecf8571627c20b!2sInstituto%20Evang%C3%A9lico%20Americano%20Caseros!5e0!3m2!1ses-419!2sar!4v1690475987757!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+        </div>
+        <!-- Contactos -->
+        <div class="foot_div-contac">
+            <h4 class="foot-h4 contacto">contacto:</h4>
+            <div class="foot-contac">
+                <img class="foot-icon" src="./Elementos/Fotos/iconos/email.png" alt="logo de correo electrónico" width="7%">
+                <span class="foot-span">untrefschool@gmail.com</span>
+            </div>
+            <div class="foot-contac">
+                <img class="foot-icon" src="./Elementos/Fotos/iconos/llamada.png" alt="logo que identifica hacer llamadas" width="7%">
+                <span class="foot-span"><a href="tel:5492314439574">(2314)-15439574</a></span>
+            </div>
+            <div class="foot-contac">
+                <img class="foot-icon" src="./Elementos/Fotos/iconos/whatsapp (2).png" alt="logo de whatsaap" width="7%">
+                <span class="foot-span"><a href="https://web.whatsapp.com/5492314439574" target="_blank">Whatsaap</a></span>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

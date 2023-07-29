@@ -1,0 +1,1829 @@
+//reset
+a{
+    text-decoration: none;
+}
+
+//fuentes Locales
+ @font-face{
+    font-family: poppins;
+    src: url(./Elementos/Fuentes/Poppins/Poppins-Regular.ttf);
+ }
+
+@font-face{
+    font-family: belanosima;
+    src: url(./Elementos/Fuentes/Belanosima/Belanosima-Regular.ttf);
+}
+
+// colores
+
+$colorOrange:#FC7300;
+$colorGreen: #1F8A70;
+$colorBlue: #00425A;
+$colorBlueOsc:#181823;
+$colorWhite:#EFF5F5;
+//
+
+//Bordes
+$borderSolid:none;
+//tipos de fuentes
+$fontPoppins:'poppins';
+$fontBelanosima:'belanosima';
+//tamaño de fuentes
+$tith1:2rem;
+$tith2:1.5rem;
+$tith3:1rem;
+$tith4:0.5rem;
+$tith5:2rem;
+$tith6:2rem;
+$parrafo:1rem;
+//espacio entre lineas
+$EentreLineas:1.5rem;
+//espacios entre caracteres
+$espacioCarac:-1px;
+//Espacio entre palabras
+$wordEspacio:0.25rem;
+//margenes
+$margin:1rem;
+$margint:1rem;
+$marginb:1rem;
+$marginl:1rem;
+$marginr:1rem;
+//padding
+$padding:1rem;
+$paddingt:1rem;
+$paddingb:1rem;
+$paddingl:1rem;
+$paddingr:1rem;
+//anchor
+$sizeAnchor:1.5rem;
+
+// Sitio Web
+body{
+  margin: 1rem;
+}
+section[id] {
+  scroll-margin-top: 80px;
+}
+//--Navegador----
+
+.encab{
+  width: 100%;
+  height: 70px;
+  background-color: $colorBlueOsc;
+  position: sticky;
+  top: 0;
+  scroll-behavior: smooth;
+  padding-top:10px;
+  margin-bottom: 10px;
+
+}
+
+.navegador{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  
+}
+.info-school{
+    float: left;
+    padding-left: 10px;
+
+}
+
+.img-nav{
+  display: inline;
+  width: 50px;
+  height: 50px;
+  float: right;
+  padding-left: 10px;
+
+}
+
+a{
+  font-size: 1.1rem;
+  color: #EFF5F5;
+}
+a:hover{
+  background-color: #00425A;
+  color: $colorWhite;
+
+}
+.tit-nav{
+  display: inline;
+  font-size: 2rem;
+  font-family: $fontPoppins;
+  color: #EFF5F5;
+}
+.tit-nav-a{
+  font-size: 2rem;
+  font-family: $fontPoppins;
+  color: #EFF5F5;
+}
+.tit-nav-a:hover{
+  background-color: $colorWhite;
+  color: $colorBlueOsc;
+}
+//anchor al formulario
+.form-a{
+  color: $colorGreen;
+  font-size: 1rem;
+}
+
+//--Portada---
+
+.portada{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+    
+}
+//--info de portada--
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 40%;
+    border-style: $borderSolid;
+    color: #EFF5F5;
+    background-color:$colorBlue;
+    padding: $padding;
+
+}
+//--Titulo 1
+.h2-p{
+    font-size: 1.5rem;
+    font-family: $fontPoppins;
+    text-align: center;
+}
+//Parrafo de Portada
+.p1-p, .p2-p, .p3-p{
+    font-size: 1rem;
+    font-family: $fontPoppins;
+    text-align: center;
+}
+// -- Imagen de Portada
+.imagen{
+    width: 60%;
+    
+    border-style: $borderSolid;
+    background-image: url(./Elementos/Fotos/Portada/alumna.jpg);
+    padding: $padding;
+    
+}
+
+//--Quienes Somos ----
+
+.descrip{
+  display: block;
+  // flex-direction: column;
+  // justify-content: center;
+  width: 100%;
+  height: 120vh;
+  
+  
+ 
+}
+// info - img
+
+.info-img{
+  display: flex;
+  width: 100%;
+  height: 130vh;
+  flex-direction: row;
+  background-size: cover;
+  
+  
+}
+//      Portada - Quienes Somos
+
+.img-qs{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 120vh;
+  
+  padding: 10px;
+}
+
+.info-qs{
+  
+  width: 60%;
+  height: 140vh;
+  
+}
+
+.cont-img{
+  width: 100%;
+  height: 120vh;
+  
+  overflow: hidden;
+  
+}
+
+//imagenes
+.img-1{
+  order: 2;
+}
+.img-2{
+  order: 1;
+}
+//info - Quienes Somos
+.tit1-qs{
+  text-align: center;
+  font-size: 1.5rem;
+  color: $colorGreen;
+  font-family: $fontBelanosima;
+  background-color: $colorWhite;
+
+}
+
+.p1-qs, .p2-qs {
+  max-width: 70ch;
+  line-height: 1.5;
+  padding: 10px;
+  text-align: left;
+  font-size: 1rem;
+  font-family: $fontPoppins;
+  
+}
+
+.ul-qs{
+  font-family: $fontPoppins;
+}
+.p2-qs{
+  font-weight: bold;
+}
+//Seccion Razones para eligirnos Escritorio ---
+.sect2{
+  display: grid;
+  width: 100%;
+  height: 150vh;
+  justify-content: center;
+  gap: 10px;
+  border-style: $borderSolid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-template-areas: 
+  "c1 c1 c1"
+  "t1 c2 c3"
+  "t2 c5 c4"
+  "t3 c6 c7"
+  "t4 c8 c9";
+}
+
+//caja de titulo
+.c1{
+  grid-area: c1;
+  text-align: center;
+  font-size: 1.5rem;
+  color: $colorGreen;
+  font-family: $fontBelanosima;
+  background-color: $colorWhite;
+  
+
+  
+}
+//cajas de texto e imagenes
+.c2{
+  grid-area: c2;
+ 
+  
+}
+.c3{
+  grid-area: c3;
+  text-align: center;
+ 
+  
+}
+
+.c2:hover, .c3:hover, .c4:hover, .c5:hover , .c6:hover , .c7:hover, .c8:hover, .c9:hover{
+  transform: scale(1.1);
+}
+.c4{
+  grid-area: c4;
+  text-align: center;
+
+}
+
+.c5{
+  grid-area: c5;
+
+}
+
+.c6{
+  grid-area: c6;
+
+}
+
+.c7{
+  grid-area: c7;
+  text-align: center;
+}
+.c8{
+  grid-area: c8;
+  text-align: center;
+}
+
+.c9{
+  grid-area: c9;
+  text-align: center;
+}
+
+//titulo 1 - 2 - 3
+.tit1-s2{
+  grid-area: t1;
+  text-align: center;
+  font-family: $fontBelanosima;
+  font-size: $tith3;
+  color: $colorBlue;
+  
+  
+}
+
+.tit2-s2{
+  grid-area: t2;
+  text-align: center;
+  font-family: $fontBelanosima;
+  font-size: 1rem;
+  color: $colorBlue;
+  
+}
+.tit3-s2{
+  grid-area: t3;
+  text-align: center;
+  font-family: $fontBelanosima;
+  font-size: $tith3;
+  color: $colorBlue;
+}
+
+.tit4-s2{
+  grid-area: t4;
+  text-align: center;
+  font-family: $fontBelanosima;
+  font-size: $tith3;
+  color: $colorBlue;
+}
+.img-s2{
+  width: 308px;
+  height: 164px;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.p-s2{
+  text-align: left;
+  font-size: 0.9rem;
+  font-family: $fontPoppins;
+}
+
+// seccion 3 - Propuesta de la institución
+
+.cards{
+  display: grid;
+  
+  width: 100%;
+  height: 130vh;
+  justify-content: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  "tc tc tc tc tc" 
+  "c1 c1 f1 f2 f3"
+  "c1 c1 f4 f5 f6";
+
+}
+.tit-s3{
+  grid-area: tc;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: $colorGreen;
+  font-family: $fontBelanosima;
+  background-color: $colorWhite;
+}
+.c1-cards{
+  grid-area: c1;
+  
+  font-size: 1rem;
+  font-family: $fontPoppins;
+  line-height: 2;
+  max-width: 60ch;
+  padding: 5px;
+  
+  margin-right: 10px;
+  font-family: $fontPoppins;
+  
+}
+
+.card1{
+  grid-area: f1;
+  // border: 1px solid black;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card2{
+  grid-area: f2;
+  // border: 1px solid black;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.card3{
+  grid-area: f3;
+  // border: 1px solid black;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card4{
+  grid-area: f4;
+  // border: 1px solid black;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card5{
+  grid-area: f5;
+  // border: 1px solid black;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.card6{
+  grid-area: f6;
+  // border: 1px solid black;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+figure{
+  font-family: $fontPoppins;
+}
+.img-s3{
+  width: 100%;
+  height: 200px;
+  border-radius: 60%;
+}
+
+//Sect. 4 NEWS -- 
+.news{
+  display: flex;
+  width: 100%;
+  height: 120vh;
+  flex-direction: column;
+ 
+  
+  
+}
+.noticias{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  height: 100vh;
+  margin-left: 3rem;
+  
+  
+  gap:2rem;
+
+
+}
+
+.tit-s4{
+  
+  font-size: 1.5rem;
+  color: $colorGreen;
+  font-family: $fontBelanosima;
+  text-align: center;
+  background-color: $colorWhite;
+  margin: 10px;
+  
+  
+}
+
+.seccion-n1, .seccion-n2{
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+  font-family: $fontBelanosima;
+  margin: 1rem;
+}
+
+.autor-n1, .autor-n2{
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight:bolder;
+  padding-left: 10px;
+  
+}
+
+.date-n1, .date-n2{
+  text-align: right;
+  font-size: 0.9rem;
+}
+.not1, .not2{
+  width: 50%;
+  height: auto;
+  box-shadow: 0px 0px 10px 0px black;
+  background-color: #EFF5F5;
+  text-align: center;
+  
+}
+
+.tit-n1, .tit-n2{
+  font-family: $fontPoppins;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 70ch;
+  
+  
+}
+
+.p1-n1, .p2-n1, .p3-n1, .p4-n1, .p5-n1, .p6-n1, .p7-n1, .p1-n2, .p2-n2, .p3-n2, .p4-n2, .p5-n2, .p6-n2, .p7-n2{
+  font-size: 1rem;
+  text-align: left;
+  max-width: 65ch;
+  line-height: 1.7;
+  
+  font-family: $fontPoppins;
+  padding-left: 10px;
+  margin: 0 0 10px;
+  
+  
+}
+
+.img-n1{
+  width: 50%;
+  height: 300px;
+  margin-right: 3rem;
+  
+}
+
+cite{
+  max-width: 40ch;
+  text-align: left;
+  font-size: 1rem;
+  font-family: $fontBelanosima;
+}
+//noticia 2
+.img-n2{
+  width: 70%;
+  height: 300px;
+  margin-right: 3rem;
+  
+}
+.not1, .not2{
+  overflow: scroll;
+}
+ul{
+  font-size: 1rem;
+  text-align: left;
+  font-family: $fontPoppins;
+}
+
+// Footer - -Escritorio - - 
+.footer {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1%;
+  background-color:$colorGreen;
+  padding: 1%;
+  padding-bottom: 2%;
+  padding-left: 3.5rem;
+  border-bottom: solid 50px;
+  font-family: $fontPoppins;
+  font-size: 1rem;
+}
+
+.foot_div {
+  width: 33%;
+  height: 100%;
+}
+
+.foot_div-red {
+  width: 100%;
+  height: 25%;
+}
+
+.foot_div-img {
+  width: 20%;
+  height: 100%;
+  padding-left: 3%;
+}
+
+.foot_div-ubic {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+}
+
+.foot_div-contac {
+  width: 40%;
+  height: 100%;
+  padding-left: 10%;
+  
+}
+
+.foot-ubic {
+  width: 100%;
+  height: 70%;
+
+  border-radius: 5%;
+  border: 2px;
+}
+//propiedades Mapas
+.maps{
+  width: 100%;
+  height: 15.625rem;
+  background-position: center;
+  background-size: cover;
+}
+.foot-contac {
+  width: 100%;
+  height: 25%;
+}
+
+.foot-h4 {
+  font-size: 25px;
+  color: $colorWhite;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.foot-icon {
+  margin-top: 5%;
+  background-color: $colorWhite;
+  border-radius: 50%;
+}
+
+.foot-img {
+  margin-top: 5%;
+  background-color: $colorWhite;
+  border-radius: 25%;
+}
+
+.foot-span {
+  color: $colorWhite;
+  font-size: 20px;
+}
+
+//-------------------------------MEDIAS QUERIES --------------
+//  - - - - -   MEDIA QUERIES -  -   -  - 320px
+@media screen and (min-width: 320px) and (max-width: 358px) {
+  //reset
+  body{
+    margin: 0px;
+  }
+  h3{
+    font-size: 1rem;
+  }
+  section[id] {
+    scroll-margin-top: 150px;
+  }
+  //header
+  .encab{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    height: 150px;
+ 
+  }
+
+  .info-school{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+  }
+  .tit-nav{
+    font-size: 0.8rem;
+    
+    
+  }
+ .tit-nav-a{
+  font-size: 0.7rem;
+ }
+  
+
+  .navegador{
+    display:flex ;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 1rem;
+    padding-bottom: 10px;
+    
+  }
+
+  a{
+    font-size: 0.5rem;
+    text-align: center;
+  }
+    //---PORTADA 320PX ---
+    .portada {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 90%;
+      height: 100vh;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    .info {
+      display: flex;
+      justify-content: start;
+      justify-items: start;
+      width: 100%;
+      height: 50vh;
+    }
+    .p1-p, .p2-p, .p3-p {
+      font-size: 0.5rem;
+    }
+    .h2-p{
+        font-size: 0.7rem;
+    }
+    .imagen {
+      width: 100%;
+      height: 50vh;
+      background-position: center;
+      background-size: cover;
+      
+    }
+    //Quienes somos 320px --
+    .descrip{
+      display: block;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 150vh;
+      
+    }
+      // info - img
+  
+    .info-img{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 180vh;
+      
+      
+      
+    }
+    .info-qs{
+      width: 100%;
+      order: 2;
+  
+  }
+    .img-qs{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      height: 300px;
+      padding-right: 16px;
+      
+      
+     
+      order: 1;
+    }
+    .cont-img{
+      width: 100%;
+      height: 300px;
+     
+  
+    }
+    .img-1{
+      display: none;
+    }
+  
+    //info - Quienes Somos
+    .tit1-qs{
+      font-size: 0.8rem;
+      text-align: center;
+  
+    }
+  
+    .p1-qs, .p2-qs{
+      font-size: 0.5rem;
+      max-width: 70ch;
+      line-height: 1.7;
+      padding: 10px;
+      text-align: left;
+      font-family: $fontPoppins;
+    }
+    .ul-qs{
+      font-family: $fontPoppins;
+      font-size: 0.5rem;
+  
+    }
+    //Porque elegirnos --- 320px
+    .sect2{
+      display: grid;
+      width: 100%;
+      height: 260vh;
+      
+      justify-content: center;
+      justify-items: center;
+      gap: 5px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(13,1fr);
+      grid-template-areas: 
+      "c1"
+      "t1"
+      "c2"
+      "c3"
+      "t2"
+      "c5"
+      "c4"
+      "t3"
+      "c6"
+      "c7"
+      "t4"
+      "c8"
+      "c9";
+    }
+    .c3{
+      text-align: center;
+    }
+    .c7{
+      text-align: center;
+    }
+    
+
+    .p-s2{
+      text-align:left;
+      font-size: 0.5rem;
+      padding-right: 10px;
+    }
+
+    .c2:hover, .c3:hover, .c4:hover, .c5:hover , .c6:hover , .c7:hover, .c8:hover, .c9:hover{
+      transform: none;
+    }
+    // ---Propuestas -- 320px
+    .cards{
+      display: grid;
+      width: 100%;
+      height: 350vh;
+      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas:
+      "tc" 
+      "c1"
+      "f1"
+      "f2"
+      "f3"
+      "f4"
+      "f5"
+      "f6";
+    
+    }
+   
+    .img-s3{
+      width: 60%;
+      height: 140px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      padding: 10px;
+    }
+    .c1-cards{
+      width: 98%;
+      height: 50vh;
+      grid-area: c1;
+      // border: 1px solid black;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+      padding-top: 1rem;
+      margin-right: 10px;
+      font-size: 0.5rem;
+      font-family: $fontPoppins;
+
+    }
+    ul{
+      font-size: 0.5rem;
+      font-family: $fontPoppins;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6{
+      width: 80%;
+      height: 230px;
+      margin-left: 1rem;
+    }
+
+    // -- Noticias 320px
+    .news{
+      width: 100%;
+      height: 168vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+    }
+    .noticias{
+      width: 100%;
+      height: 150vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px;
+      
+    }
+    .not1, .not2{
+      width: 100%;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+    }
+    .img-n1, .img-n2{
+      width: 200px;
+      height: 200px;
+
+    }
+    .tit-s4{
+      font-size: 1rem;
+      color: $colorGreen;
+      font-family: $fontBelanosima;
+      
+    }
+    
+    
+    .tit-n1, .tit-n2{
+      font-size: 0.8rem;
+      text-align: center;
+      max-width: 70ch;
+      
+      
+    }
+    
+    .p1-n1, .p2-n1, .p3-n1, .p4-n1, .p5-n1, .p6-n1, .p7-n1, .p1-n2, .p2-n2, .p3-n2, .p4-n2, .p5-n2, .p6-n2, .p7-n2{
+      font-size: 0.6rem;
+      text-align: left;
+      max-width: 70ch;
+      line-height: 1.5;
+      text-indent: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
+      
+      
+    }
+    
+   
+    
+   cite{
+    font-size: 0.4rem;
+   }
+
+   //--Footer --320px ---
+   .footer {
+    width: 98%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 0rem;
+    
+    // gap: 1%;
+    // background-color:$colorGreen;
+    // padding: 1%;
+    // padding-bottom: 2%;
+    border-bottom: solid 50px;
+  }
+  //Redes Sociales
+  .foot_div-img{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+
+  }
+  
+  .red{
+    text-align: center;
+    order: 1;
+    display: none;
+  }
+  .foot-img{
+    width: 40px;
+    height: 40px;
+  }
+  // Maps celular
+
+  .foot_div-ubic{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 220px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+  .foot-h4{
+    order: 1;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .foot-ubic{
+    width: 100%;
+    height: 300px;
+    order: 2;
+  }
+
+  //Contactos - Celular
+  .foot_div-contac{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  .foot-span{
+    font-size: 0.8rem;
+  }
+ 
+
+}   
+
+
+//--------- MEDIAS QUERIES CELULAR  ----
+@media screen and (min-width: 359px) and (max-width: 500px) {
+  body{
+    margin: 0px;
+  }
+  section[id] {
+    scroll-margin-top: 171px;
+  }
+    .encab{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      width: 100%;
+      height: 150px;
+      padding-bottom: 10px;
+    }
+
+    .info-school{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+     
+      
+      
+    }
+    .tit-nav{
+      font-size: 1rem;
+      
+      
+    }
+   
+    
+  
+    .navegador{
+      display:flex ;
+      flex-direction: column;
+      justify-content: end;
+      padding-left: 3rem;
+      
+      
+    }
+
+    a{
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    .tit-nav-a{
+      font-size: 1rem;
+      font-family: $fontPoppins;
+      color: #EFF5F5;
+    }
+
+    //---Portada -- Celular
+    .portada {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 90%;
+      height: 130vh;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    .info {
+      display: flex;
+      justify-content: start;
+      justify-items: start;
+      width: 100%;
+      height: 100vh;
+    }
+    .p1-p, .p2-p, .p3-p {
+      font-size: 0.8rem;
+    }
+    
+    .imagen {
+      width: 100%;
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+      
+    }
+    //QUIENES SOMOS - QUERIES - CELULAR
+
+  .descrip{
+    display: block;
+    // flex-direction: column;
+    // justify-content: center;
+    width: 100%;
+    height: 170vh;
+    // margin-top: 8.5rem;
+    
+    
+
+  }
+    // info - img
+
+  .info-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 180vh;
+    
+    
+    
+  }
+  .info-qs{
+    width: 100%;
+    order: 2;
+
+}
+  .img-qs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 300px;
+    padding-right: 16px;
+    
+    
+   
+    order: 1;
+  }
+  .cont-img{
+    width: 100%;
+    height: 300px;
+   
+
+  }
+  .img-1{
+    display: none;
+  }
+
+  //info - Quienes Somos
+  .tit1-qs{
+  
+    text-align: center;
+
+  }
+
+  .p1-qs, .p2-qs{
+    font-size: 0.7rem;
+    max-width: 70ch;
+    line-height: 1.7;
+    padding: 10px;
+    text-align: left;
+    font-family: $fontPoppins;
+  }
+  .ul-qs{
+    font-family: $fontPoppins;
+    font-size: 0.7rem;
+
+  }
+
+    //Seccion Razones para eligirnos --- Celular
+    .sect2{
+      display: grid;
+      width: 100%;
+      height: 260vh;
+      
+      justify-content: center;
+      justify-items: center;
+      gap: 5px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(13,1fr);
+      grid-template-areas: 
+      "c1"
+      "t1"
+      "c2"
+      "c3"
+      "t2"
+      "c5"
+      "c4"
+      "t3"
+      "c6"
+      "c7"
+      "t4"
+      "c8"
+      "c9";
+    }
+    .c3{
+      text-align: center;
+    }
+    .c7{
+      text-align: center;
+    }
+    
+
+    .p-s2{
+      text-align:left;
+      font-size: 0.7rem;
+      padding-right: 10px;
+    }
+
+    .c2:hover, .c3:hover, .c4:hover, .c5:hover , .c6:hover , .c7:hover, .c8:hover, .c9:hover{
+      transform: none;
+    }
+      // seccion 3 - Propuesta de la institución - Celular
+      
+    //section 3 cards - Propuestas
+    .cards{
+      display: grid;
+      width: 100%;
+      height: 380vh;
+      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas:
+      "tc" 
+      "c1"
+      "f1"
+      "f2"
+      "f3"
+      "f4"
+      "f5"
+      "f6";
+    
+    }
+   
+    .img-s3{
+      width: 60%;
+      height: 140px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
+      padding: 10px;
+    }
+    .c1-cards{
+      width: 98%;
+      height: 80vh;
+      grid-area: c1;
+      // border: 1px solid black;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+      padding-top: 1rem;
+      margin-right: 10px;
+      font-size: 0.7rem;
+      font-family: $fontPoppins;
+      margin-left: 1rem;
+      line-height: 1.7rem;
+
+    }
+    ul{
+      font-size: 0.7rem;
+      font-family: $fontPoppins;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6{
+      width: 80%;
+      height: 230px;
+      margin-left: 2rem;
+    }
+    //sectio 4 -  News -- Celular
+    .news{
+      width: 100%;
+      height: 168vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+    }
+    .noticias{
+      width: 100%;
+      height: 150vh;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px;
+      
+    }
+    .not1, .not2{
+      width: 100%;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+    }
+    .img-n1{
+      width: 50px;
+      height: 50px;
+
+    }
+    .tit-s4{
+      font-size: 1.5rem;
+      color: $colorGreen;
+      font-family: $fontBelanosima;
+      
+    }
+    
+    
+    .tit-n1, .tit-n2{
+      font-size: 1rem;
+      text-align: center;
+      max-width: 70ch;
+      
+      
+    }
+    
+    .p1-n1, .p2-n1, .p3-n1, .p4-n1, .p5-n1, .p6-n1, .p7-n1, .p1-n2, .p2-n2, .p3-n2, .p4-n2, .p5-n2, .p6-n2, .p7-n2{
+      font-size: 0.7rem;
+      text-align: left;
+      max-width: 70ch;
+      line-height: 1.5;
+      text-indent: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      
+      
+      
+    }
+    
+    .img-n1{
+      width: 80%;
+      height: 300px;
+    }
+    
+   cite{
+    font-size: 0.7rem;
+   }
+    
+   // Footer - - Celular- - 
+  .footer {
+    width: 98%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 0rem;
+    
+    // gap: 1%;
+    // background-color:$colorGreen;
+    // padding: 1%;
+    // padding-bottom: 2%;
+    border-bottom: solid 50px;
+  }
+  //Redes Sociales
+  .foot_div-img{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+
+  }
+  
+  .red{
+    text-align: center;
+    order: 1;
+    display: none;
+  }
+  .foot-img{
+    width: 40px;
+    height: 40px;
+  }
+  // Maps celular
+
+  .foot_div-ubic{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 350px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+  .foot-h4{
+    order: 1;
+    text-align: center;
+  }
+  .foot-ubic{
+    width: 100%;
+    height: 300px;
+    order: 2;
+  }
+
+  //Contactos - Celular
+  .foot_div-contac{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+  }
+  .foot-span{
+    font-size: 0.8rem;
+  }
+
+}
+
+
+
+
+  //media queries TABLET ----
+  @media screen and (min-width: 501px) and (max-width: 1024px) {
+   // -- Header - Tablet
+
+   .encab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   }
+   // Nombre y Logo
+   .info-school{
+    display: flex;
+    flex-direction: row;
+   }
+   //Titulo Header
+   .tit-nav{
+    font-size: 1.2rem;
+   }
+   // Navegación Tablet
+   .navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    height: 30px;
+    
+
+   }
+   a{
+    font-size: 1rem;
+   }
+   .tit-nav-a{
+    font-size: 1.3rem;
+    
+  }
+    // Portada - Main - Tablet
+    .portada {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 130vh;
+      margin-left: 1rem;
+      margin-right: 0.5rem;
+    }
+    .info {
+      display: flex;
+      justify-content: start;
+      justify-items: start;
+      width: 100%;
+      height: 320px;
+    }
+    h1 {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 0.9rem;
+      text-align: center;
+      padding-right: 1.4rem;
+    }
+   
+    .imagen {
+      width: 100%;
+      height: 400px;
+      
+      
+      
+    }
+
+     //QUIENES SOMOS - QUERIES - Tablet
+
+    .descrip{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 190vh;
+      
+      
+      margin-top: 1rem;
+    }
+      // info - img
+
+    .info-img{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 150vh;
+      
+    
+    
+    }
+    .info-qs{
+      width: 100%;
+      
+      order: 2;
+
+  }
+    .img-qs{
+      width: 95%;
+      padding-left: 10px;
+    
+    
+      height: 300px;
+      order: 1;
+    }
+    .cont-img{
+      width: 100%;
+      height: 300px;
+      text-align: center;
+
+    }
+    .img-1{
+      display: none;
+    }
+    .p1-qs, .p2-qs{
+      max-width: 80ch;
+      text-align: center;
+      padding-left: 30px;
+      font-size: 1rem;
+      font-family: $fontPoppins;
+    }
+    ul{
+      text-align: left;
+      padding-left: 30px;
+      font-size: 1rem;
+      font-family: $fontPoppins;
+    }
+    .p2-qs{
+      font-weight: bold;
+      
+    }
+   //seccion 2: Razones elegirnos - Tablet
+    .sect2{
+      
+      display: grid;
+      width: 95%;
+      height: 212vh;
+      justify-content: center;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      gap: 5px;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(9,1fr);
+      grid-template-areas: 
+      "c1 c1"
+      "t1 t1"
+      "c2 c3"
+      "t2 t2"
+      "c5 c4"
+      "t3 t3"
+      "c6 c7"
+      "t4 t4"
+      "c8 c9"
+      ;
+    }
+    .p-s2{
+      text-align:justify;
+      font-size: 1rem;
+      max-width: 70ch;
+    }
+    .c1{
+      height: 80px;
+      border-style: $borderSolid;
+    }
+    
+
+    //section 3 cards -- Propuestas --Tablets
+    .cards{
+      display: grid;
+      width: 100%;
+      height: 240vh;
+      justify-content: center;
+      
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas:
+      "tc tc" 
+      "c1 c1"
+      "f1 f2"
+      "f3 f4"
+      "f5 f6";
+    
+    }
+    .c1-cards{
+      grid-area: c1;
+      margin-left: 3rem;
+      max-width: 75ch;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+      padding-top: 1rem;
+      margin-right: 10px;
+      
+
+    }
+    .card1{
+      grid-area: f1;
+      
+    }
+    .card2{
+      grid-area: f2;
+    }
+    .card3{
+      grid-area: f3;
+    }
+    .card4{
+      grid-area: f4;
+    }
+    .card5{
+      grid-area: f5;
+    }
+    .card6{
+      grid-area: f6;
+    }
+
+    .img-s3{
+      width: 200px;
+      height: 180px;
+      border-radius: 60%;
+
+    }
+
+    // News Queries Tablets
+    .news{
+      width: 100%;
+      height: 218vh;
+    }
+    .tit-s4{
+      font-size: 1.5rem;
+      color: $colorGreen;
+      font-family: $fontBelanosima;
+    }
+    
+    .noticias{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 200vh;
+      padding-left: 2.5rem;
+      margin: 0px;
+      
+
+    }
+      .not1, .not2{
+        width: 100%;
+        height: 100vh;
+        box-shadow: 0px 0px 10px 0px black;
+        background-color: #EFF5F5;
+        gap: 1rem;
+        
+      }
+    
+
+    
+    .tit-n1, .tit-n2{
+      font-size: 1rem;
+      text-align: center;
+      max-width: 100ch;
+      
+      
+    }
+    
+    .p1-n1, .p2-n1, .p3-n1, .p4-n1, .p5-n1, .p6-n1, .p7-n1, .p1-n2, .p2-n2, .p3-n2, .p4-n2, .p5-n2, .p6-n2, .p7-n2{
+      font-size: 1rem;
+      text-align: center;
+      max-width: 70ch;
+      line-height: 1.5;
+      text-indent: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left: 4rem;
+      
+      
+    }
+    
+    .img-n1, .img-n2{
+      width: 50%;
+      height: 250px;
+      margin: 0px;
+    }
+    
+   cite{
+    font-size: 0.7rem;
+   }
+   //--Footer - Tablets - - 
+   .footer {
+    width: 98%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 0rem;
+    
+    gap: 0%;
+    // background-color:$colorGreen;
+    padding: 0%;
+    padding-bottom: 0%;
+    border-bottom: solid 50px;
+  }
+  //Redes Sociales
+  .foot_div-img{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 94%;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    
+
+  }
+  
+  .red{
+    text-align: center;
+    order: 1;
+    display: none;
+  }
+  .foot-img{
+    width: 40px;
+    height: 40px;
+  }
+  // Maps tablet
+
+  .foot_div-ubic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 95%;
+    height: 350px;
+    margin: 0rem;
+  }
+  .foot-h4{
+    order: 1;
+    text-align: center;
+  }
+  .foot-ubic{
+    width: 80%;
+    height: 300px;
+    order: 2;
+    text-align: right;
+ 
+  }
+
+  //Contactos - Tablets
+  .foot_div-contac{
+    width: 98%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .contacto{
+    display: none;
+  }
+  .foot-span{
+    gap: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+    
+  }
